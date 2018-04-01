@@ -18,7 +18,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytreact";
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 // Any other request should be routed to this homepage:
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
     res.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 })
 // Start the server
