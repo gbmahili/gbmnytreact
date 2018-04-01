@@ -203,7 +203,7 @@ class Articles extends Component {
                                         this.state.articles.map((article, i) =>
 
                                             <div key={i} className="col s12 m10 offset-m1">
-                                                <div className="card horizontal">
+                                                <div className="card">
                                                     <div className="card-image">                                                            
                                                             {(() => {
                                                             if (article.multimedia[0] === undefined){
