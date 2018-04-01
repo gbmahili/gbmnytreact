@@ -20,7 +20,7 @@ mongoose.connect(MONGODB_URI);
 // Any other request should be routed to this homepage:
 app.get("*", (req, res) => {
     // res.sendFile(path.resolve(__dirname, "client/build", "index.html"));
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join(__dirname, "index.html"));
 })
 // Start the server
 app.listen(PORT, () => console.log(`App started at port ${PORT}!`));
