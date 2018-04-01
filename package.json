@@ -12,13 +12,14 @@
   "author": "Baraka Mahili",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.9",
+    "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "mongoose": "^5.0.9",
     "request": "^2.85.0"
   }
 }
