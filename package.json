@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A New York Times Article Search Application",
   "main": "server.js",
-  "scripts": {
-    "server": "node server.js",
-    "client": "cd client && npm run start",
-    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
-    "build": "cd client && npm run build",
-    "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
+    "scripts": {
+      "start": "node server.js",
+      "client": "cd client && npm run start",
+      "server": "nodemon server.js",
+      "nytreact": "npm start --prefix nytreact",
+      "dev": "concurrently \"npm run server\" \"npm run nytreact\""
+    },
   "author": "Baraka Mahili",
   "license": "MIT",
   "dependencies": {
