@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Jumbotron from './Components/Jumbotron';
-import Articles from './Components/articles/get-articles';
+import Main from './Components/Layout/Main';
 
 class App extends Component {
   render() {
     return (
       <div>
         <Jumbotron />
-        <Articles />
+        <Main />
       </div>
     );
   }
